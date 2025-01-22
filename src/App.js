@@ -19,11 +19,12 @@ function App() {
   const travelElements = TravelData.map((travelItem) => {
     return (
       <Entry
-        image={travelItem.img}
-        title={travelItem.title}
-        country={travelItem.country}
-        dates={travelItem.dates}
-        text={travelItem.text}
+        // img={travelItem.img}
+        // title={travelItem.title}
+        // country={travelItem.country}
+        // dates={travelItem.dates}
+        // text={travelItem.text}
+        {...travelItem} // spread operator used 
       />
     );
   });
